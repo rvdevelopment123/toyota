@@ -1,0 +1,350 @@
+@media (max-width: 900px) {
+    #page-sidebar {
+        min-height: 0px !important;
+        height: 0px !important;
+    }
+    .scroll-sidebar {
+        min-height: 0px !important;
+        height: 0px !important;
+    }
+    #page-sidebar.in {
+        min-height: 450px !important;
+        height: 450px !important;
+    }
+
+    #page-sidebar.in scroll-sidebar {
+        min-height: 450px !important;
+        height: 450px !important;
+    }
+}
+.hover-red-alt:hover {
+	background: #ff1111;
+}
+
+.hover-white-alt:hover {
+	background: #eeecdd;
+}
+
+.hover-india-alt:hover {
+	background: #ffb311;
+}
+
+.hover-germany-alt:hover {
+	background: #dae319;
+}
+
+/* @group Blink */
+.blink {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+     animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.required{
+    color: red;
+    font-size: 18px;
+}
+
+.td-right-center{
+    text-align: right; 
+    font-weight: bold;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.dropdown-menu ul li ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+.dropdown-menu ul li ul li {
+    color: #333;
+}
+
+#page-sidebar.collapse.in.bg-green {
+    background-color: #2ECC71;
+}
+
+#page-sidebar.collapse.in.bg-red {
+    background-color: #E74C3C;
+}
+
+#page-sidebar.collapse.in.bg-blue {
+    background-color: #3498DB;
+}
+
+#page-sidebar.collapse.in.bg-warning {
+    background-color: #E67E22;
+}
+
+#page-sidebar.collapse.in.bg-purple {
+    background-color: #984DFF;
+}
+
+#page-sidebar.collapse.in.bg-black {
+    background-color: #2D2D2D;
+}
+
+#page-sidebar.collapse.in.bg-primary {
+    background-color: #00BBA3;
+}
+
+.calc_btn {
+    color: black;
+}
+
+.calc_result{
+    color: black;
+}
+
+.a4paper{
+    width: 8.25in;
+    height: 11.6in;
+    display: block;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: .1in 0 0 .1in;
+    page-break-after: always;
+}
+
+.pp10 {
+    width: 3.50in;
+    height: 2.235in;
+    margin-left: .10in;
+    padding-top: .7in;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+}
+
+
+.pp24 {
+    width: 2.48in;
+    height: 1.335in;
+    margin-left: .079in;
+    padding-top: .3in;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+}
+
+.pp40{
+    width: 1.799in;
+    height: 1.003in;
+    margin: 0 .07in;
+    padding-top: .05in;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+}
+
+.pp50 {
+    width: 1.48in;
+    height: 1.115in;
+    margin-left: .079in;
+    padding-top: .085in;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+}
+
+.pp60{
+    width: 1.20in;
+    height: 1.08in;
+    margin-left: .079in;
+    padding-top: .085in;
+    border: 1px solid #ddd;
+    margin-top: 2px;
+}
+
+.pp70{
+    width: .950in;
+    height: 1.08in;
+    margin-left: .040in;
+    margin-right: .13in;
+    padding-top: .085in;
+}
+
+.barcode-single-item {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    /*border: 1px solid #ccc;*/
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.barcode-item {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.vertical-text {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+}
+
+/* custom checkbox css */
+.checkbox-custom {
+    padding-left: 20px; 
+}
+.checkbox-custom label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; 
+}
+.checkbox-custom label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out; 
+}
+.checkbox-custom label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555; 
+}
+.checkbox-custom input[type="checkbox"] {
+    opacity: 0; 
+}
+.checkbox-custom input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; 
+}
+.checkbox-custom input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f00c"; 
+}
+.checkbox-custom input[type="checkbox"]:disabled + label {
+  opacity: 0.65; }
+  .checkbox-custom input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed; }
+.checkbox-custom.checkbox-circle label::before {
+border-radius: 50%; }
+.checkbox-custom.checkbox-inline {
+    margin-top: 0; 
+}
+
+.checkbox-custom-success input[type="checkbox"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c; }
+.checkbox-custom-success input[type="checkbox"]:checked + label::after {
+    color: #fff; 
+}
+
+.bg-khaki{
+  background-color: #FFFDE6;
+}
+
+#sidebar-menu li.active {
+    background: rgba(0,0,0,.4) !important;
+    border-radius: 4px;
+}
+
+.no-due{
+  padding: 30px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.today-profit-header{
+  text-align: center;
+  padding: 20px;
+}
+
+.bg-sells{
+  background-color: #d9ebfb;
+}
+
+.bg-purchase{
+  background-color: #e8fbe3;
+}
+
+.font-size-9{
+  font-size: 9px;
+}
+
+.font-white {
+  color: #FFF !important;
+}
+
+.sells-td{
+  
+}
+
+.border-orange{
+  border-color: #e5af41 !important;
+}
+
+.font-orange{
+  color: #e5af41 !important;
+}
+
+.barcode-info-p{
+  line-height: 15px !important; 
+  font-size: 8px !important; 
+  color: black !important;
+}
+
+

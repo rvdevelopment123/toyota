@@ -1,0 +1,319 @@
+.pos-table-header {
+    font-weight: bold; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    margin: 0px; 
+    margin-top: 7px;
+    color: white;
+}
+
+.pos-table-header td{
+    color: #FFF;
+}
+
+.padLpadR0{
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+.padTpadB0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.pos-footer{
+    margin: 0px; 
+    font-weight: bold;
+    color: #FFF; 
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.pos-discount-input{
+    width: 100%;
+    color: #000; 
+    font-size: 13px; 
+    font-weight: normal; 
+    border: 0px; 
+    padding-left: 5px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
+
+.pos-product-col{
+    border: 1px solid #ddd; 
+    margin: 4px;
+    background-color: #fafce3;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.pos-product-col img{
+    padding: 5px;
+    height: 70px;
+    width: 80px;
+}
+
+.pos-total{
+    margin: 0px; 
+    font-weight: bold; 
+    color: #FFF;
+    padding-top: 7px;
+    padding-bottom: 7px; 
+    font-size: 13px; 
+    border-top: 1px solid #dddddd;
+}
+
+.pos-table{
+    border: 0px;
+    border-collapse: collapse;
+    width: 100%; 
+    height:auto;
+    color: #FFF;
+}
+
+.pos-cat-div{
+    border-bottom: 1px solid #ddd; 
+    padding-top: 11px;
+}
+
+.pos-single-cat{
+    cursor: pointer; 
+    text-align: center; 
+    width: 100px; 
+    height: 50px; 
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px;
+    color: white;
+}
+
+.pos-product-button{
+    margin-top: 10px; 
+    margin-left: 19px; 
+    border-radius: 5px; 
+    padding: 20px 10px 20px 10px; 
+    background-color: #005b8a; 
+    border: 0px; color: #FFF;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; 
+    width: 120px;
+}
+
+.slider {    
+    width: 50%;
+}
+    
+.slick-slide {
+  margin: 0px 3px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.zero-border-radius{
+    border-radius: 0px !important;
+}
+
+
+/*loader one css start*/
+#loader {
+  width: 100px;
+  height: 100px; 
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+}
+
+.a {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #d1ccc0;  
+  position: absolute;
+  border-radius: 50%;
+  border-bottom: 1px solid #164A7F;
+  border-top: 1px solid #164A7F;
+  -webkit-animation: spin-right 2s linear infinite;
+  animation: spin-right 2s linear infinite;
+}
+
+.b {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #d1ccc0; 
+  border-radius: 50%;
+  margin: 5px 5px; 
+  border-bottom: 1px solid #164A7F;
+  border-top: 1px solid #164A7F;
+  -webkit-animation: spin-left 1s linear infinite;
+  animation: spin-left 2s linear infinite;
+}
+
+.c {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border: 1px solid #d1ccc0; 
+  border-radius: 50%;
+  margin: -82px 10px; 
+  border-bottom: 1px solid #164A7F;
+  border-top: 1px solid #164A7F;
+  -webkit-animation: spin-right 2s linear infinite;
+  animation: spin-right 2s linear infinite;
+}
+
+.d {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: 1px solid #d1ccc0; 
+  border-radius: 50%;
+  margin: -77px 15px; 
+  border-bottom: 1px solid #164A7F;
+  border-top: 1px solid #164A7F; /*16a085*/
+  -webkit-animation: spin-left 1s linear infinite;
+  animation: spin-left 1s linear infinite;
+}
+
+@keyframes spin-left {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-right {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/*loader-2 css start*/
+
+/*@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  padding-bottom: 100px;
+}
+
+h1, h3 {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  font-family: 'Tahoma';
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  margin: 50px auto;
+}
+
+.loader {
+  position: relative;
+  margin: 75px auto;
+  width: 150px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+}
+.loader div {
+  height: 100%;
+}
+
+.loader1, .loader1 div {
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+  -webkit-animation: rotate linear 3.5s infinite;
+          animation: rotate linear 3.5s infinite;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-bottom-color: rgba(0, 0, 255, 0.5);
+}
+
+
+
+div:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.loader, .loader * {
+  will-change: transform;
+}*/
+
+/*loader-2 css ends*/

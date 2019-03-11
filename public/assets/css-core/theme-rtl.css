@@ -1,0 +1,42 @@
+#page-sidebar {
+    float: right !important;
+    margin-left: -100%;
+    margin-right: 0px !important;
+}
+
+@media(min-width: 1200px) {
+    #page-content {
+        margin-right: 260px;
+    }
+}
+
+
+#page-content {
+    margin-left: 0 !important;
+}
+
+#header-logo {
+    float: right !important;
+}
+
+#header-nav-left {
+    float: right !important;
+    margin: 0 15px;
+}
+
+#header-nav-right {
+    float: left !important;
+    margin: 15px 0 0 20px;
+}
+
+#sidebar-menu li a {
+	padding-right: 10px !important;
+}
+
+#page-sidebar li ul li a::before {
+    display: none;
+}
+
+.dashboard-box-chart .header {
+    text-align: right;
+}

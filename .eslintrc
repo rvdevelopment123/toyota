@@ -1,0 +1,39 @@
+{
+  "root": true,
+  
+  "rules": {
+		"comma-dangle": ["error", "only-multiline"],
+		"camelcase": ["error", {properties: "never"}]
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+    },
+  },
+
+  "globals": {
+    "FileReader": false,
+    "XMLHttpRequest": false,
+    "Image": false,
+    "FormData": false,
+    "$": false,
+    "ELEMENT": false,
+    "FB": false,
+    "moment": false,
+    'twttr': true,
+    'WOW': true,
+    'wow': true,
+    'ScrollReveal': true,
+    'vFSLayout': true,
+    "browser": true,
+    "node": true,
+    "window": true,
+    "gapi": true,
+    "Chart": true
+	}
+}

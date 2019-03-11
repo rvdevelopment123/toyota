@@ -1,0 +1,279 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap-theme.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "~animate.css/animate.css";
+@import "~datatable/datatable.css";
+@import "~bootstrap-select/dist/css/bootstrap-select.css";
+@import "~eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css";
+@import "~sweetalert2/dist/sweetalert2.css";
+@import "_spinner.scss";
+
+// Fonts
+@import "./../fonts/raleway.css";
+
+// Helpers
+@import "./../helpers/backgrounds.css";
+@import "./../helpers/boilerplate.css";
+@import "./../helpers/border-radius.css";
+@import "./../helpers/grid.css";
+@import "./../helpers/page-transitions.css";
+@import "./../helpers/spacing.css";
+@import "./../helpers/typography.css";
+@import "./../helpers/utils.css";
+@import "./../helpers/colors.css";
+
+// Elements
+@import "./../elements/badges.css";
+@import "./../elements/buttons.css";
+@import "./../elements/content-box.css";
+@import "./../elements/dashboard-box.css";
+@import "./../elements/forms.css";
+@import "./../elements/images.css";
+@import "./../elements/info-box.css";
+@import "./../elements/invoice.css";
+@import "./../elements/loading-indicators.css";
+@import "./../elements/menus.css";
+@import "./../elements/panel-box.css";
+@import "./../elements/response-messages.css";
+@import "./../elements/responsive-tables.css";
+@import "./../elements/ribbon.css";
+@import "./../elements/social-box.css";
+@import "./../elements/tables.css";
+@import "./../elements/tile-box.css";
+@import "./../elements/timeline.css";
+
+// Icons
+@import "./../icons/linecons/linecons.css";
+@import "./../icons/spinnericon/spinnericon.css";
+@import "./../icons/themeIcons.css";
+
+// External Libraries
+@import "./../node_modules/accordion-ui/accordion.css";
+@import "./../node_modules/datatable/datatable.css";
+@import "./../node_modules/dialog/dialog.css";
+@import "./../node_modules/dropdown/dropdown.css";
+@import "./../node_modules/input-switch/inputswitch.css";
+@import "./../node_modules/input-switch/inputswitch-alt.css";
+@import "./../node_modules/modal/modal.css";
+@import "./../node_modules/nestable/nestable.css";
+@import "./../node_modules/progressbar/progressbar.css";
+@import "./../node_modules/tabs-ui/tabs.css";
+@import "./../node_modules/wizard/wizard.css";
+
+// Snippets
+
+@import "./../snippets/chat.css";
+@import "./../snippets/files-box.css";
+@import "./../snippets/login-box.css";
+@import "./../snippets/notification-box.css";
+@import "./../snippets/progress-box.css";
+@import "./../snippets/todo.css";
+@import "./../snippets/user-profile.css";
+@import "./../snippets/mobile-navigation.css";
+
+@import "./../applications/mailbox.css";
+
+@import "./../themes/admin/layout.css";
+@import "./../themes/admin/color-schemes/default.css";
+@import "./../themes/components/default.css";
+@import "./../themes/components/border-radius.css";
+
+@import "./../helpers/responsive-elements.css";
+@import "./../helpers/admin-responsive.css";
+
+.user-account-btn {
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+#page-sidebar.font-inverse {
+    #sidebar-menu li {
+        .sidebar-submenu {
+            ul {
+                li a.sfActive {
+                    background: rgba(0,0,0,0.4);
+                }
+            }
+        }
+        
+    }
+}
+
+.calculator
+{
+    width:395px;
+    height:250px;
+    background-color:#c8e2dc;
+    border:2px solid #CCCCCC;
+    margin:auto;
+    padding-left:5px;
+    padding-bottom:5px;
+}
+.calculator td
+{
+        height:16.66%;
+}
+.calc_td_result
+{
+        text-align:center;
+}
+.calc_result
+{
+        width:90%;
+        text-align:right;
+        padding: 10px;
+}
+.calc_td_calculs
+{
+        text-align:center;
+}
+.calc_calculs
+{
+        width:90%;
+        text-align:left;
+}
+.calc_td_btn
+{
+        width:25%;
+        height:100%;
+}
+.calc_btn
+{
+        width:90%;
+        height:90%;
+        font-size:20px;
+}
+
+body.swal2-shown {
+    -webkit-animation: none !important;
+}
+
+table.dataTable thead th {
+    position: relative;
+    background-image: none !important;
+}
+ 
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
+}
+
+table.dataTable thead th.sorting:after {
+    content: "\f0dc";
+    color: #ddd;
+    font-size: 0.8em;
+    padding-top: 0.12em;
+}
+table.dataTable thead th.sorting_asc:after {
+    content: "\f0de";
+}
+table.dataTable thead th.sorting_desc:after {
+    content: "\f0dd";
+}
+
+
+
+
+table.dataTable thead td {
+    position: relative;
+    background-image: none !important;
+}
+ 
+table.dataTable thead td.sorting:after,
+table.dataTable thead td.sorting_asc:after,
+table.dataTable thead td.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
+}
+
+table.dataTable thead td.sorting:after {
+    content: "\f0dc";
+    color: #ddd;
+    font-size: 0.8em;
+    padding-top: 0.12em;
+}
+table.dataTable thead td.sorting_asc:after {
+    content: "\f0de";
+}
+table.dataTable thead td.sorting_desc:after {
+    content: "\f0dd";
+}
+
+#sidebar-menu { 
+    li {
+        &.active {
+            background: rgba(0,0,0, 0.5);
+            border-radius: 4px;
+        }
+        border-bottom: thin solid rgba(255, 255, 255, 0.1);
+        a {
+            padding: 0px 0px 0px 10px;
+            font-size: 15px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.sidebar-submenu {
+    li {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#page-sidebar {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.table {
+    td {
+        color: #000;
+    }
+    thead.table-header-color {
+        td:first-child {
+            border-top-left-radius: 4px;
+        }
+        td:last-child {
+            border-top-right-radius: 4px;
+        }
+        td {
+            //background-color: #3f9577;
+            background-color: #468EB4;
+            color: #FFF;
+        }
+    }
+}
+
+.footer {
+    padding: 10px;
+}
+
+img.thumb-small {
+    width: 96px;
+    height: auto;
+}
+
+img.thumb-medium {
+    width: 128px;
+    height: auto;
+}
+
+img.thumb-large {
+    width: 256px;
+    height: auto;
+}
