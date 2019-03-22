@@ -143,7 +143,8 @@
 						<td colspan="2">
 							<select v-model="method" class="form-control selectpicker">
 							  <option value="cash">{{trans('core.cash')}}</option>
-							  <option value="cheque">{{trans('core.cheque')}}</option>
+								<option value="cheque">{{trans('core.cheque')}}</option>
+								<option value="installment">{{trans('core.installment')}}</option>
 							  <option value="others">{{trans('core.others')}}</option>
 							</select>
 						</td>
@@ -283,7 +284,11 @@
 		    data: {
 		    	customer: 1,
 		    	paid: 0,
-		    	method: 'cash',
+					method: 'cash',
+					upfront_payment: '',
+					monthly_payment: '',
+					last_payment: '',
+					total_installment: '',
 		    	shipping_cost: 0,
 		    	products: {!! json_encode($products) !!},
 		    	sells: [
@@ -404,7 +409,7 @@
 		        		return false;
 		        	}
 		        	var self = this
-					axios.post('/admin/sell/new', { sells: this.sells, customer: this.customer, paid: this.paid, method: this.method, discountType: this.discountType, discount: this.discount, total: this.total, shipping_cost: this.shipping_cost })
+					axios.post('/admin/sell/new', { sells: this.sells, customer: this.customer, paid: this.paid, method: this.method, upfront_payment: this.upfront_payment, monthly_payment: this.monthly_payment, last_payment: this.last_payment, total_installment: this.total_installment, discountType: this.discountType, discount: this.discount, total: this.total, shipping_cost: this.shipping_cost })
 					  .then(function (response) {
 					    console.log(JSON.stringify(response.data));
 					    self.submitted = true

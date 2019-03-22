@@ -14,7 +14,7 @@ class AddUnitCostPriceToSells extends Migration
     public function up()
     {
         Schema::table('sells',function(Blueprint $table){
-            $table->float('unit_cost_price')->nullable()->after('quantity');
+            $table->float('unit_cost_price', 11, 2)->nullable()->after('quantity');
         });
     }
 

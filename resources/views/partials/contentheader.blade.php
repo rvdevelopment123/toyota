@@ -4,7 +4,7 @@
         @section('contentheader') 
             {{ settings('site_name') }}
             <small style=" font-size: 12px; letter-spacing: 2px;" class="hidden-xs">
-                <b>{{Auth::user()->warehouse->name}}</b>
+                <b>{{ (!empty(Auth::user()->warehouse)) ? Auth::user()->warehouse->name : '' }}</b>
             </small>
         @show
     </h2>

@@ -19,7 +19,8 @@
 			    	<label>Paying By</label>
 			    	<select class="form-control" v-model="paying_method" style="border-radius: 0px !important;">
 			    		<option value="cash">Cash</option>
-			    		<option value="cheque">Cheque</option>
+							<option value="cheque">Cheque</option>
+							<option value="installment">Installment</option>
 			    		<option value="others">Others</option>
 			    	</select>
 		    	</div>
@@ -30,6 +31,27 @@
 			    	<label>Reference No</label>
 			    	<input type="text" v-model="reference_no" class="form-control" style="border-radius: 0px !important;">
 		    	</div>
+			</div>
+			
+			<div class="row" v-if="paying_method == 'installment'">
+		  		<div class="col-md-6">
+			    	<label>Upfront Payment</label>
+			    	<input type="text" v-model="upfront_payment" class="form-control" style="border-radius: 0px !important;">
+          </div>
+          <div class="col-md-6">
+            <label>Monthly Payment</label>
+            <input type="text" v-model="monthly_payment" class="form-control" style="border-radius: 0px !important;">
+          </div>
+      </div>
+      <div class="row" v-if="paying_method == 'installment'">
+		  		<div class="col-md-6">
+			    	<label>Last Payment</label>
+			    	<input type="text" v-model="last_payment" class="form-control" style="border-radius: 0px !important;">
+          </div>
+          <div class="col-md-6">
+            <label>Total Installment</label>
+            <input type="text" v-model="total_installment" class="form-control" style="border-radius: 0px !important;">
+          </div>
 			</div>
 		  </div>
 

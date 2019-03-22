@@ -33,6 +33,9 @@ return [
     'alert_range' => 'अलर्ट मात्रा',
     'alert_title' => 'चेतावनी के लिए',
     'allow_invoice_tax' => 'चालान कर की अनुमति दें',
+    'agent' => 'एजेंट',
+    'agent_list' => 'एजेंट सूची',
+    'agent_details' => 'एजेंट विवरण',
 
     'backup' => 'बैकअप',
     'back' => 'वापस',
@@ -111,6 +114,7 @@ return [
     'invoice_list' => 'चालान सूची',
     'invoice_no' => 'चालान नंबर',
     'invoice_info' => 'चालान जानकारी',
+    'installment' => 'किस्त',
     'inactive' => 'निष्क्रिय',
     'item' => 'मद',
 
@@ -127,6 +131,7 @@ return [
     'method' => 'तरीका',
     'make_payment' => 'भुगतान करो',
     'modify_search' => 'खोज संशोधित करें',
+    'model' => 'आदर्श',
 
     'name' => 'नाम',
     'no_due' => 'कोई कारण नहीं',
@@ -279,10 +284,16 @@ return [
     'voucher_no' => 'रसीद संख्या',
     'view_all' => 'सभी को देखें',
     'view_details' => 'विवरण देखें',
+    'vin' => 'VIN',
 
     'wholesaler' => 'थोक विक्रेता',
     'with_labor_cost' => 'अतिरिक्त लागत के साथ',
     'with_shipping_cost' =>'नौवहन लागत के साथ',
+    
+    'year' => 'साल',
+    
+    'national_id' => 'राष्ट्रीय पहचान पत्र',
+    'sponsor_name' => 'प्रायोजक का नाम',
 
     'entity' => 'सत्ता',
     'save' => 'बचाना',

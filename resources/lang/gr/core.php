@@ -10,6 +10,9 @@ return [
     'add_new_user' => 'Neuen Benutzer hinzufügen',
     'alert_range' => 'Alert Menge',
     'alert_title' => 'Alert für',
+    'agent' => 'Agent',
+    'agent_list' => 'Agentenlisten',
+    'agent_details' => 'Agentendetails',
 
     'backup' => 'Sicherung',
 
@@ -59,6 +62,7 @@ return [
 
     'in_words' => 'In Worten',
     'invoice' => 'Rechnung',
+    'installment' => 'Rate',
 
     'last_five_payment' => 'Unter der Geldrangliste letzten 5 mal',
     'last_five_given_payment' => 'Geldrangliste letzten 5 mal',
@@ -67,6 +71,7 @@ return [
 
     'mrp' => 'Maximaler Einzelhandelspreis',
     'memo' => 'Memo',
+    'model' => 'Modell',
 
     'name' => 'Name',
     'note' => 'Hinweis',
@@ -152,9 +157,15 @@ return [
     'voucher' => 'Eingang',
     'voucher_no' => 'Quittung Nr',
     'view_all' => 'Alle anzeigen',
+    'vin' => 'VIN',
 
     'wholesaler' => 'Großhändler',
     'with_labor_cost' => 'Mit zusätzlichen Kosten',
+    
+    'year' => 'Jahr',
+    
+    'national_id' => 'Personalausweis',
+    'sponsor_name' => 'Sponsorname',
 
     'entity' => 'Entität',
     

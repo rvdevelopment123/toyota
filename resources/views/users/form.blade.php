@@ -68,11 +68,25 @@
         <div class="form-group">
             <label class="control-label col-sm-3">{{ trans('core.role') }}</label>
             <div class="col-sm-6">
-                <select name="role" class="form-control selectpicker" data-live-search="true" title="Please select a role..." @if($user->hasRole("Super User")) disabled="true" @endif>
+                <select name="role" class="form-control selectpicker" id="roleId" data-live-search="true" title="Please select a role..." @if($user->hasRole("Super User")) disabled="true" @endif>
                 @foreach($roles as $role)
                     <option value="{{$role->id}}" @if($user->hasRole($role->name)) selected @endif>{{$role->name}}</option>
                 @endforeach
                 </select>
+            </div>
+        </div>
+        
+        <div class="form-group" id="agentDetails">
+            <label class="control-label col-sm-3">{{ trans('core.national_id') }}</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="National ID" name="national_id" value="{{$user->national_id}}" />
+            </div>
+        </div>
+        
+        <div class="form-group" id="agentDetails">
+            <label class="control-label col-sm-3">{{ trans('core.sponsor_name') }}</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Sponsor Name" name="sponsor_name" value="{{$user->sponsor_name}}" />
             </div>
         </div>
 
@@ -127,4 +141,27 @@
 
     {{ Form::close() }}
 </div>
+@stop
+
+@section('js')
+    @parent
+    <script type="text/javascript">
+        $(document).ready(function(){
+			$('#roleId').on('change', function() {
+				var roleId = $(this).val();
+				var roleName = $('#roleId option:selected').text();
+				
+				if (roleName.toLowerCase() == 'agents' || roleName.toLowerCase() == 'agent') {
+					$('div#agentDetails').css('display', 'block');
+				} else {
+					$('div#agentDetails').css('display', 'none');
+				}
+			});
+        });
+		/*ends*/
+
+		$(function() {
+			$('#roleId').trigger('change');
+        });
+    </script>
 @stop

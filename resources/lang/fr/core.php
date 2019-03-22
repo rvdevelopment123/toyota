@@ -33,6 +33,9 @@ return [
     'alert_range' => 'Quantité d\'alerte',
     'alert_title' => 'Alerte pour',
     'allow_invoice_tax' => 'Autoriser la taxe sur les factures',
+    'agent' => 'Agent/Agente',
+    'agent_list' => "Listes d'agents",
+    'agent_details' => "Détails de l'agent",
 
     'backup' => 'Sauvegarde',
     'back' => 'Arrière',
@@ -112,6 +115,7 @@ return [
     'invoice_no' => 'Facture No',
     'invoice_info' => 'Informations sur la facture',
     'inactive' => 'Inactif',
+    'installment' => 'Tranche',
     'item' => 'Article',
 
     'last_five_payment' => 'Liste des cinq dernières transactions',
@@ -127,6 +131,7 @@ return [
     'method' => 'méthode',
     'make_payment' => 'Effectuer le paiement',
     'modify_search' => 'Modifier la recherche',
+    'model' => 'Modèle',
 
     'name' => 'prénom',
     'no_due' => 'Non exigible',
@@ -279,10 +284,16 @@ return [
     'voucher_no' => 'No de reçu',
     'view_all' => 'Voir tout',
     'view_details' => 'Voir les détails',
+    'vin' => 'NIV',
 
     'wholesaler' => 'Grossiste',
     'with_labor_cost' => 'Avec un coût supplémentaire',
     'with_shipping_cost' =>'Avec le coût d\'expédition',
+    
+    'year' => 'Année',
+    
+    'national_id' => "carte d'identité",
+    'sponsor_name' => "nom du sponsor",
 
     'entity' => '',
     'save' => 'sauvegarder',

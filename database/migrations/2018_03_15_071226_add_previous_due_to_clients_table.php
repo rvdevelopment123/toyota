@@ -14,7 +14,7 @@ class AddPreviousDueToClientsTable extends Migration
     public function up()
     {
         Schema::table('clients',function(Blueprint $table){
-            $table->float('provious_due')->after('client_type')->nullable();
+            $table->float('provious_due', 11, 2)->after('client_type')->nullable();
             $table->string('account_no')->after('provious_due')->nullable();
         });
     }

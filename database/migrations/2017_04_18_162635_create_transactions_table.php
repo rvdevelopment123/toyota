@@ -17,10 +17,10 @@ class CreateTransactionsTable extends Migration
             $table->string('reference_no');
             $table->integer('client_id');
             $table->string('transaction_type');
-            $table->float('discount')->default(0);
-            $table->float('total');
-            $table->float('labor_cost')->default(0);
-            $table->float('paid');
+            $table->float('discount', 11, 2)->default(0);
+            $table->float('total', 11, 2);
+            $table->float('labor_cost', 11, 2)->default(0);
+            $table->float('paid', 11, 2);
             $table->boolean('return')->default(0);
             $table->timestamps();
             $table->softDeletes();

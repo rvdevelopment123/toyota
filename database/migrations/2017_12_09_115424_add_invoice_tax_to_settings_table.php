@@ -15,7 +15,7 @@ class AddInvoiceTaxToSettingsTable extends Migration
     {
         Schema::table('settings',function(Blueprint $table){
             $table->boolean('invoice_tax')->default(0)->after('product_tax');
-            $table->float('invoice_tax_rate')->default(0)->after('invoice_tax');
+            $table->float('invoice_tax_rate', 11, 2)->default(0)->after('invoice_tax');
             $table->integer('invoice_tax_type')->default(2)->after('invoice_tax_rate');
         });
     }

@@ -79,6 +79,13 @@
                             <span>{{ trans('core.user')}} </span>
                         </a>
                     </li>
+                    
+                    <li>
+                        <a href="{{route('agents.index')}}">
+                            <i class=''></i> 
+                            <span>{{ trans('core.agent')}} </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </li>

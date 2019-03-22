@@ -14,7 +14,7 @@ class AddProductTaxPurchasesTable extends Migration
     public function up()
     {
         Schema::table('purchases',function(Blueprint $table){
-            $table->float('product_tax')->nullable()->after('sub_total');
+            $table->float('product_tax', 11, 2)->nullable()->after('sub_total');
         });
     }
 

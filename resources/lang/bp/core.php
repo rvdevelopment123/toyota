@@ -37,6 +37,9 @@ return [
     'alert_range' => 'Quantidade de alerta de produto',
     'alert_title' => 'Alerta para',
     'allow_invoice_tax' => 'Permitir imposto de fatura',
+    'agent' => 'Agente',
+    'agent_list' => 'Listas de Agentes',
+    'agent_details' => 'Detalhes do Agente',
 
     'backup' => 'Cópia de segurança',
     'back' => 'Costas',
@@ -124,6 +127,7 @@ return [
     'invoice_no' => 'Fatura Não',
     'invoice_info' => 'Informação de fatura',
     'inventory' => 'Inventário',
+    'installment' => 'Prestação',
     'deactivate' => 'Desativar',
     'activate' => 'Ativar',
     'item' => 'Item',
@@ -141,6 +145,7 @@ return [
     'method' => 'Método',
     'make_payment' => 'Make Payment',
     'modify_search' => 'Modificar pesquisa',
+    'model' => 'Modelo',
     'more_details' => 'Mais detalhes',
     'minimum_retails_price' => 'Preço Mínimo de Varejo',
 
@@ -310,10 +315,16 @@ return [
     'view_report' => 'Exibir relatório',
     'view_details' => 'Ver detalhes',
     'vat_no' => 'VAT não',
+    'vin' => 'VINHO',
 
     'wholesaler' => 'Grossista',
     'with_labor_cost' => 'Com custo adicional',
     'with_shipping_cost' =>'Com custo de envio',
+    
+    'year' => 'Ano',
+    
+    'national_id' => 'identidade nacional',
+    'sponsor_name' => 'Nome do Patrocinador',
 
     'entity' => '',
     'save' => 'Salve',

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddProductTaxSellsTable extends Migration
+class AddUserAgentIdTransactionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddProductTaxSellsTable extends Migration
      */
     public function up()
     {
-        Schema::table('sells',function(Blueprint $table){
-            $table->float('product_tax', 11, 2)->nullable()->after('sub_total');
+        Schema::table('transactions', function(Blueprint $table) {
+            $table->integer('user_agent_id')->after('client_id')->nullable();
         });
     }
 
@@ -25,8 +25,8 @@ class AddProductTaxSellsTable extends Migration
      */
     public function down()
     {
-        Schema::table('sells',function(Blueprint $table){
-            $table->dropColumn('product_tax');
+        Schema::table('transactions', function(Blueprint $table) {
+            $table->dropColumn('user_agent_id');
         });
     }
 }

@@ -86,6 +86,8 @@ class UserController extends Controller
         }
         $user->address = $request->get('address');
         $user->phone = $request->get('phone');
+        $user->national_id = $request->get('national_id');
+        $user->sponsor_name = $request->get('sponsor_name');
         $user->warehouse_id = $request->get('warehouse_id');
 
         if($request->hasFile('image')){

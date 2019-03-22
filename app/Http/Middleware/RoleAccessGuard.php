@@ -20,7 +20,8 @@ class RoleAccessGuard
             'publisher' => 'Publisher',
             'finance' => 'Finance Manager',
             'admin' => 'Admin',
-            'staff' => 'Staff'
+            'staff' => 'Staff',
+            'agent' => 'Agent'
         ];
         return array_key_exists($role, $roles) ? $roles[$role] : 'N/A';
     }

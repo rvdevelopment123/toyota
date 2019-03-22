@@ -17,10 +17,10 @@ class ReturnTransactions extends Migration
             $table->increments('id');
             $table->integer('sells_id');
             $table->integer('client_id');
-            $table->float('return_vat');
+            $table->float('return_vat', 11, 2);
             $table->string('sells_reference_no');
             $table->integer('return_units');
-            $table->float('return_amount');
+            $table->float('return_amount', 11, 2);
             $table->integer('returned_by');
             $table->timestamps();
             $table->softDeletes();

@@ -27,6 +27,13 @@ Route::group(['prefix'=>'admin', 'middleware' => ['auth', 'revalidate'] ], funct
 	=========================================================*/
 	// Language Switcher
 	Route::get('locale/{locale}', 'SettingsController@switchLocale')->name('locale.set');
+	
+	/*========================================================
+		Agents route
+	=========================================================*/
+	Route::get('agent', 'AgentController@getIndex')->name('agents.index');
+	
+	Route::get('agent/details/{transaction}', 'AgentController@agentDetails')->name('agents.details');
 
 	/*========================================================
 		Dashboard Routes

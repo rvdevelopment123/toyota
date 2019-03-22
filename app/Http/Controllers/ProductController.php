@@ -96,6 +96,10 @@ class ProductController extends Controller
         $product->name = $request->get('name');
         $product->code = $request->get('code');
         
+        $product->model = $request->get('model');
+        $product->year = $request->get('year');
+        $product->vin = $request->get('vin');
+        
         $product->cost_price = $request->get('cost_price');
         $product->mrp = $request->get('mrp');
         $product->minimum_retail_price = $request->get('minimum_retail_price');

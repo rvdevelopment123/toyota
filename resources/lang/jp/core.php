@@ -33,6 +33,9 @@ return [
     'alert_range' => 'アラート数量',
     'alert_title' => 'アラートの目的',
     'allow_invoice_tax' => '請求書税を許可する',
+    'agent' => 'エージェント',
+    'agent_list' => 'エージェントリスト',
+    'agent_details' => 'エージェント詳細',
 
     'backup' => 'バックアップ',
     'back' => 'バック',
@@ -111,6 +114,7 @@ return [
     'invoice_list' => '請求書一覧',
     'invoice_no' => '請求書番号',
     'invoice_info' => '請求書情報',
+    'installment' => '取り付け',
     'inactive' => '非アクティブ',
     'item' => '項目',
 
@@ -127,6 +131,7 @@ return [
     'method' => '方法',
     'make_payment' => '支払う',
     'modify_search' => '検索の変更',
+    'model' => 'モデル',
 
     'name' => '名',
     'no_due' => '期限なし',
@@ -279,10 +284,16 @@ return [
     'voucher_no' => '領収書番号',
     'view_all' => 'すべて見る',
     'view_details' => '詳細を見る',
+    'vin' => 'VIN',
 
     'wholesaler' => '卸売業者',
     'with_labor_cost' => '追加費用で',
     'with_shipping_cost' =>'配送コスト',
+    
+    'year' => '年',
+    
+    'national_id' => '国民ID',
+    'sponsor_name' => 'スポンサー名',
 
     'entity' => '',
     'save' => 'セーブ',

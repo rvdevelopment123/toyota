@@ -308,7 +308,11 @@
 		    	invoice_tax_type: {{ settings('invoice_tax_type') ?: 2 }},
 		    	paid: 0,
 		    	paying_method: 'cash',
-		    	reference_no: '',
+					reference_no: '',
+					upfront_payment: '',
+					monthly_payment: '',
+					last_payment: '',
+					total_installment: '',
 		    	search: '',
 		    	loading: false,
 		    },
@@ -471,7 +475,7 @@
 		        		return false;
 		        	}
 
-		    		axios.post('/admin/pos/sell/save', {customer: this.customer, sells: this.selectedProducts, paid: this.paid, method: this.paying_method, discount_amount: this.discountAmount, invoice_tax: this.invoiceTax, })
+		    		axios.post('/admin/pos/sell/save', {customer: this.customer, sells: this.selectedProducts, paid: this.paid, method: this.paying_method, upfront_payment: this.upfront_payment, monthly_payment: this.monthly_payment, last_payment: this.last_payment, total_installment: this.total_installment, discount_amount: this.discountAmount, invoice_tax: this.invoiceTax, })
 		    			.then(function (response) {
 		    				swal('success', 'success', 'success')
 		    				var transactionId = response.data.id

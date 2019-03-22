@@ -21,6 +21,7 @@ class RolePermissionSeeder extends Seeder
         $su = Role::firstOrcreate(['name' => 'Super User']);
         $admin = Role::firstOrcreate(['name' => 'Owner']);
         $moderator = Role::firstOrcreate(['name' => 'Staff']);
+        $agent = Role::firstOrcreate(['name' => 'Agent']);
 
         // Create permissions
         Permission::truncate();
@@ -28,7 +29,8 @@ class RolePermissionSeeder extends Seeder
             "admin.access" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "admins.manage" => [
                 'Super User',
@@ -38,52 +40,63 @@ class RolePermissionSeeder extends Seeder
             ],
             "category.create" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "category.manage" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "product.create" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "product.manage" => [
                 'Super User',
                 'Owner',
+                'Agent'
             ],
             "product.view" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "customer.create" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "customer.manage" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "customer.view" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "supplier.create" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "supplier.manage" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "supplier.view" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "user.create" => [
                 'Super User',
@@ -96,7 +109,8 @@ class RolePermissionSeeder extends Seeder
             "sell.create" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "sell.manage" => [
                 'Super User',
@@ -105,19 +119,23 @@ class RolePermissionSeeder extends Seeder
             "return.create" => [
                 'Super User',
                 'Owner',
-                'Staff'
+                'Staff',
+                'Agent'
             ],
             "purchase.create" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "purchase.manage" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "transaction.view" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "expense.create" => [
                 'Super User',
@@ -145,11 +163,13 @@ class RolePermissionSeeder extends Seeder
             ],
             "branch.create" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "report.view" => [
                 'Super User',
-                'Owner'
+                'Owner',
+                'Agent'
             ],
             "profit.view" => [
                 'Super User',

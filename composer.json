@@ -11,7 +11,7 @@
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "5.5.*",
         "milon/barcode": "^5.3",
-        "rachidlaasri/laravel-installer": "dev-bugfix"
+        "rachidlaasri/laravel-installer": "4.0.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

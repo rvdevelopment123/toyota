@@ -14,7 +14,7 @@ class AddOpeningStocksToProducts extends Migration
     public function up()
     {
         Schema::table('products',function(Blueprint $table){
-            $table->float('opening_stock')->after('image')->nullable();
+            $table->float('opening_stock', 11, 2)->after('image')->nullable();
         });
     }
 

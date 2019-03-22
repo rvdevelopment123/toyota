@@ -15,6 +15,9 @@ return [
     'add_new_expense' => 'নতুন খরচ তৈরি',
     'alert_range' => 'সর্বনিম্ন কয়টি পণ্য থাকলে সংকেত দেখাবে',
     'alert_title' => 'Alert For',
+    'agent' => 'প্রতিনিধি',
+    'agent_list' => 'এজেন্ট তালিকা',
+    'agent_details' => 'এজেন্ট বিবরণ',
 
     'backup' => 'ডাটাবেজ সংরক্ষণ',
     'back' => 'পিছনে যান',
@@ -88,6 +91,7 @@ return [
     'invoice_list' => 'ইনভয়েসের তালিকা',
     'invoice_no' => 'ইনভয়েসের নং',
     'invoice_info' => 'ইনভয়েসের তথ্যসমূহ',
+    'installment' => 'কিস্তি',
     'item' => 'Item',
 
     'last_five_payment' => 'সর্বশেষ ৫ বার টাকা গ্রহণের তালিকা',
@@ -101,6 +105,7 @@ return [
     'memo_list_today' => 'আজকের বিক্রয়ের তালিকা',
     'menu' => 'মেনু',
     'make_payment' => 'বকেয়া পরিশোধ',
+    'model' => 'মডেল',
 
     'name' => 'নাম',
     'note' => 'ণোট',
@@ -249,11 +254,17 @@ return [
     'voucher_no' => 'রশিদ নং',
     'view_all' => 'সবগুলো দেখুন',
     'view_details' => 'View Details',
+    'vin' => 'ওয়াইন',
 
     'wholesaler' => 'পাইকারী বিক্রেতা',
     'with_labor_cost' => 'With Additional Cost',
     'with_shipping_cost' =>'পরিবহন খরচসহ',
     'wrong_password' => 'ভুল পাসওয়ার্ড, পুনরায় চেষ্টা করুন',
+    
+    'year' => 'বছর',
+    
+    'national_id' => 'জাতীয় আইডি',
+    'sponsor_name' => 'পৃষ্ঠপোষক নাম',
 
     'entity' => 'টি',
     

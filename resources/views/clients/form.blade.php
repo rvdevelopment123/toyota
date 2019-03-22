@@ -81,6 +81,15 @@
 					{!! Form::text('account_no', $client->account_no, ['class' => 'form-control']) !!}
 				</div>
 			</div>
+			
+			<div class="form-group">
+					<label class="col-sm-3 control-label">
+						{{ trans('core.national_id') }}
+					</label>
+					<div class="col-sm-6">
+						{!! Form::text('national_id', $client->national_id, ['class' => 'form-control']) !!}
+					</div>
+				</div>
 
 			<div class="form-group">
 				<label class="col-sm-3 control-label">

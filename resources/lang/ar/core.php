@@ -34,6 +34,9 @@ return [
     'alert_range' => 'كمية تنبيه',
     'alert_title' => 'Alert For',
     'allow_invoice_tax' => 'Allow Invoice Tax',
+    'agent' => 'وكيل',
+    'agent_list' => 'قائمة الوكيل',
+    'agent_details' => 'تفاصيل الوكيل',
 
     'backup' => 'دعم',
     'back' => 'الى الخلف',
@@ -122,6 +125,7 @@ return [
     'invoice_info' => 'معلومات الفاتورة',
     'inactive' => 'Inactive',
     'inventory' => 'المخزون',
+    'installment' => 'تقسيط',
     'item' => 'Item',
 
     'last_five_payment' => 'Last Five Transaction List',
@@ -137,6 +141,7 @@ return [
     'method' => 'طريقة',
     'make_payment' => 'قم بالدفع',
     'modify_search' => 'تعديل البحث',
+    'model' => 'نموذج',
     'minimum_retails_price' => 'الحد الأدنى لسعر التجزئة',
 
     'name' => 'اسم',
@@ -298,10 +303,15 @@ return [
     'view_all' => 'عرض الكل',
     'view_details' => 'عرض التفاصيل',
     'view_report' => 'عرض التقرير',
+    'vin' => 'VIN',
 
     'wholesaler' => 'Wholesaler',
     'with_labor_cost' => 'With Additional Cost',
     'with_shipping_cost' =>'With Shipping Cost',
+    'year' => 'عام',
+    
+    'national_id' => 'الهوية الوطنية',
+    'sponsor_name' => 'اسم الراعي',
 
     'entity' => '',
     'save' => 'حفظ',

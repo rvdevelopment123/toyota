@@ -10,6 +10,9 @@ return [
     'add_new_user' => 'Añadir nuevo usuario',
     'alert_range' => 'Cantidad de alerta',
     'alert_title' => 'Alerta por',
+    'agent' => 'Agente',
+    'agent_list' => 'Listas de agentes',
+    'agent_details' => 'Detalles del agente',
 
     'backup' => 'Apoyo',
 
@@ -59,12 +62,14 @@ return [
 
     'in_words' => 'En palabras',
     'invoice' => 'Factura',
+    'installment' => 'Entrega',
 
     'last_five_payment' => 'Últimos cinco pagos',
     'last_five_given_payment' => 'Últimos cinco pagos',
     'logo' => 'Logo',
     'labor_cost' => 'Costo de envío',
-
+    
+    'model' => 'Modelo',
     'mrp' => 'Precio máximo de venta al público',
     'memo' => 'Memorándum',
 
@@ -152,13 +157,17 @@ return [
     'voucher' => 'Recibo',
     'voucher_no' => 'Recibo No',
     'view_all' => 'Ver todo',
+    'vin' => 'VIN'
 
     'wholesaler' => 'Mayorista',
     'with_labor_cost' => 'Con Costo Adicional',
 
     'entity' => 'entidad',
     
+    'year' => 'Año',
     
+    'national_id' => 'Identificación nacional',
+    'sponsor_name' => 'nombre del patrocinador',
     
     
     

@@ -14,7 +14,7 @@ class AddPosToTransactionTable extends Migration
     public function up()
     {
         Schema::table('transactions',function(Blueprint $table){
-            $table->float('change_amount')->after('paid')->nullable();
+            $table->float('change_amount', 11, 2)->after('paid')->nullable();
             $table->boolean('pos')->after('return')->default(0);
         });
     }

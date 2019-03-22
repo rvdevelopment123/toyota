@@ -211,6 +211,11 @@ class SellController extends Controller
             $transaction = new Transaction;
                 $transaction->reference_no = $ref_no;
                 $transaction->client_id = $customer;
+                if (\Auth::user()->hasRole('Admin') || \Auth::user()->hasRole('Agent')) {
+                    $transaction->user_agent_id = \Auth::user()->id;
+                } else {
+                    $transaction->user_agent_id = 0;
+                }
                 $transaction->transaction_type = 'sell';
                 $transaction->total_cost_price = $total_cost_price;
                 $transaction->discount = $discountAmount;
@@ -226,6 +231,10 @@ class SellController extends Controller
             if($paid > 0){
                 $payment = new Payment;
                     $payment->client_id = $customer;
+                    $payment->upfront_payment = $request->get('upfront_payment');
+                    $payment->monthly_payment = $request->get('monthly_payment');
+                    $payment->last_payment = $request->get('last_payment');
+                    $payment->total_installment = $request->get('total_installment');
                     $payment->amount = $paid;
                     $payment->method = $request->get('method');
                     $payment->type = 'credit';

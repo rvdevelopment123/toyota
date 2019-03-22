@@ -18,7 +18,7 @@ class CreateSellsTable extends Migration
             $table->integer('client_id');
             $table->integer('product_id');
             $table->float('quantity');
-            $table->float('sub_total');
+            $table->float('sub_total', 11, 2);
             $table->timestamps();
             $table->softDeletes();
         });

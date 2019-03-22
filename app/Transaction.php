@@ -32,6 +32,10 @@ class Transaction extends Model
     public function warehouse () {
         return $this->belongsTo('App\Warehouse');
     }
+    
+    public function agent() {
+        return $this->belongsTo('App\User', 'user_agent_id', 'id');
+    }
 
     protected static function boot () {
         parent::boot();

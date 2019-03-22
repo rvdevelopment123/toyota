@@ -37,6 +37,9 @@ return [
     'alert_range' => 'Product Alert Quantity',
     'alert_title' => 'Alert For',
     'allow_invoice_tax' => 'Allow Invoice Tax',
+    'agent' => 'Agent',
+    'agent_list' => 'Agent Lists',
+    'agent_details' => 'Agent Details',
 
     'backup' => 'Backup',
     'back' => 'Back',
@@ -124,6 +127,7 @@ return [
     'invoice_no' => 'Invoice No',
     'invoice_info' => 'Invoice Info',
     'inventory' => 'Inventory',
+    'installment' => 'Installment',
     'deactivate' => 'Deactivate',
     'activate' => 'Activate',
     'item' => 'Item',
@@ -141,6 +145,7 @@ return [
     'method' => 'Method',
     'make_payment' => 'Make Payment',
     'modify_search' => 'Modify Search',
+    'model' => 'Model',
     'more_details' => 'More Details',
     'minimum_retails_price' => 'Minimum Retail Price',
 
@@ -312,10 +317,16 @@ return [
     'view_report' => 'View Report',
     'view_details' => 'View Details',
     'vat_no' => 'Vat No',
+    'vin' => 'VIN',
 
     'wholesaler' => 'Wholesaler',
     'with_labor_cost' => 'With Additional Cost',
     'with_shipping_cost' =>'With Shipping Cost',
+    
+    'year' => 'Year',
+    
+    'national_id' => 'National ID',
+    'sponsor_name' => 'Sponsor Name',
 
     'entity' => '',
     'save' => 'Save',

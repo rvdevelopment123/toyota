@@ -20,9 +20,9 @@ class CreateProductsTable extends Migration
             $table->integer('subcategory_id')->nullable();           
             $table->float('quantity')->nullable();
             $table->longtext('details')->nullable();
-            $table->float('cost_price');
-            $table->float('mrp');
-            $table->float('minimum_retail_price')->nullable();
+            $table->float('cost_price', 11, 2);
+            $table->float('mrp', 11, 2);
+            $table->float('minimum_retail_price', 11 ,2)->nullable();
             $table->string('unit', 11)->nullable();
             $table->boolean('status')->nullable();
             $table->text('image')->nullable();

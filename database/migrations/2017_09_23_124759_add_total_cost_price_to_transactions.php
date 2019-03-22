@@ -14,10 +14,10 @@ class AddTotalCostPriceToTransactions extends Migration
     public function up()
     {
         Schema::table('transactions',function(Blueprint $table){
-            $table->double('total_cost_price')->nullable()->after('transaction_type');
-            $table->float('invoice_tax')->nullable()->after('total');
-            $table->float('total_tax')->nullable()->after('invoice_tax');
-            $table->float('net_total')->nullable()->after('labor_cost');
+            $table->double('total_cost_price', 11, 2)->nullable()->after('transaction_type');
+            $table->float('invoice_tax', 11, 2)->nullable()->after('total');
+            $table->float('total_tax', 11, 2)->nullable()->after('invoice_tax');
+            $table->float('net_total', 11, 2)->nullable()->after('labor_cost');
         });
     }
 

@@ -122,6 +122,10 @@ class posController extends Controller
             if($paid > 0){
                 $payment = new Payment;
                     $payment->client_id = $customer;
+                    $payment->upfront_payment = $request->get('upfront_payment');
+                    $payment->monthly_payment = $request->get('monthly_payment');
+                    $payment->last_payment = $request->get('last_payment');
+                    $payment->total_installment = $request->get('total_installment');
                     $payment->amount = ($paid > ($total_payable + $invoice_tax) ? ($total_payable + $invoice_tax) : $paid);
                     $payment->method = $request->get('method');
                     $payment->type = 'credit';
