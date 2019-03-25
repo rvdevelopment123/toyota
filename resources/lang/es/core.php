@@ -69,7 +69,7 @@ return [
     'logo' => 'Logo',
     'labor_cost' => 'Costo de envío',
     
-    'model' => 'Modelo',
+    'car_model' => 'Modelo de auto',
     'mrp' => 'Precio máximo de venta al público',
     'memo' => 'Memorándum',
 
@@ -85,6 +85,7 @@ return [
     'password' => 'Contraseña',
     'confirm_password' => 'Confirmar contraseña',
     'phone' => 'Teléfono',
+    'phone_number' => 'Número de teléfono',
     'price' => 'Precio',
     'product' => 'Producto',
     'product_name' => 'nombre del producto',
@@ -157,7 +158,7 @@ return [
     'voucher' => 'Recibo',
     'voucher_no' => 'Recibo No',
     'view_all' => 'Ver todo',
-    'vin' => 'VIN'
+    'vin' => 'VIN',
 
     'wholesaler' => 'Mayorista',
     'with_labor_cost' => 'Con Costo Adicional',
@@ -168,6 +169,11 @@ return [
     
     'national_id' => 'Identificación nacional',
     'sponsor_name' => 'nombre del patrocinador',
+    
+    'upfront_payment' => 'Pago Por Adelantado',
+    'monthly_payment' => 'Mensualidad',
+    'last_payment' => 'Ultimo pago',
+    'total_installment' => 'Pago total',
     
     
     

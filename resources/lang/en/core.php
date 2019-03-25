@@ -145,7 +145,7 @@ return [
     'method' => 'Method',
     'make_payment' => 'Make Payment',
     'modify_search' => 'Modify Search',
-    'model' => 'Model',
+    'car_model' => 'Car Model',
     'more_details' => 'More Details',
     'minimum_retails_price' => 'Minimum Retail Price',
 
@@ -171,6 +171,7 @@ return [
     'payment_method' => 'Payment Method',
     'confirm_password' => 'Confirm Password',
     'phone' => 'Phone',
+    'phone_number' => 'Phone Number',
     'price' => 'Price',
     'product' => 'Product',
     'product_settings'  => 'Product Settings',
@@ -327,6 +328,11 @@ return [
     
     'national_id' => 'National ID',
     'sponsor_name' => 'Sponsor Name',
+    
+    'upfront_payment' => 'Upfront Payment',
+    'monthly_payment' => 'Monthy Payment',
+    'last_payment' => 'Last Payment',
+    'total_installment' => 'Total Installment',
 
     'entity' => '',
     'save' => 'Save',

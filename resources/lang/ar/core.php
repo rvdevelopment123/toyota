@@ -141,7 +141,7 @@ return [
     'method' => 'طريقة',
     'make_payment' => 'قم بالدفع',
     'modify_search' => 'تعديل البحث',
-    'model' => 'نموذج',
+    'car_model' => 'طراز السيارة',
     'minimum_retails_price' => 'الحد الأدنى لسعر التجزئة',
 
     'name' => 'اسم',
@@ -165,6 +165,7 @@ return [
     'payment_method' => 'طريقة الدفع او السداد',
     'confirm_password' => 'تأكيد كلمة المرور',
     'phone' => 'هاتف',
+    'phone_number' => 'رقم الهاتف',
     'price' => 'السعر',
     'product' => 'المنتج',
     'product_revenue' => 'Product Revenue',
@@ -312,6 +313,11 @@ return [
     
     'national_id' => 'الهوية الوطنية',
     'sponsor_name' => 'اسم الراعي',
+    
+    'upfront_payment' => 'مقدما الدفع',
+    'monthly_payment' => 'الدفع الشهري',
+    'last_payment' => 'الدفعة الأخيرة',
+    'total_installment' => 'مجموع الدفعة',
 
     'entity' => '',
     'save' => 'حفظ',

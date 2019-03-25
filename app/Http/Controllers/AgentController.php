@@ -7,6 +7,7 @@ use App\Tax;
 use App\Sell;
 use App\User;
 use App\Role;
+use App\UserRole;
 use App\Client;
 use App\Product;
 use App\Payment;
@@ -34,7 +35,13 @@ class AgentController extends Controller
     {
         $customers =  Client::orderBy('first_name', 'asc')
                                 ->where('client_type', "!=" ,'purchaser')
-                                ->pluck('first_name', 'id');
+                                ->get();
+                                
+        $agents = User::with(['user_role' => function($query) {
+            $query->with(['role' => function($query1) {
+                $query1->where('name', 'Agent')->orWhere('name', 'Agents');
+            }]);
+        }])->get();
                                 
         $transactions = Transaction::where('transaction_type', 'sell')->orderBy('id', 'desc');
 
@@ -44,6 +51,10 @@ class AgentController extends Controller
 
         if($request->get('customer')) {
             $transactions->whereClientId($request->get('customer'));
+        }
+        
+        if($request->get('agent')) {
+            $transactions->where('user_agent_id', $request->get('agent'));
         }
 
         if($request->get('type') == 'pos') {
@@ -83,6 +94,7 @@ class AgentController extends Controller
         
         return view('agents.index')
                 ->withCustomers($customers)
+                ->withAgents($agents)
                 ->withTransactions($transactions->paginate(20))
                 ->with('net_total', $net_total)
                 ->with('invoice_tax', $invoice_tax)
@@ -90,6 +102,17 @@ class AgentController extends Controller
                 ->with('total', $total)
                 ->with('total_cost_price', $total_cost_price)
                 ->with('profit', $profit);
+    }
+    
+    /**
+     * post of index.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postIndex(Request $request) {
+        $params = array_filter($request->only($this->searchParams));
+        return redirect()->action('AgentController@getIndex', $params);
     }
     
     /**
@@ -101,11 +124,18 @@ class AgentController extends Controller
     public function agentDetails(Transaction $transaction)
     {
         $payments = $transaction->payments()->orderBy('id', 'desc')->get();
+        $sells = $transaction->sells()->orderBy('id', 'desc')->get();
+        $sell = $transaction->sell;
+        $payment = $transaction->payment;
+        
         $total_paid = $transaction->payments()->where('type', 'credit')->sum('amount');
         $total_return = $transaction->payments()->where('type', 'return')->sum('amount');
         $total = $total_paid -  $total_return;
         
         return view('agents.details')
+                ->withSells($sells)
+                ->withSell($sell)
+                ->withPayment($payment)
                 ->withTransaction($transaction)
                 ->withPayments($payments)
                 ->withTotal($total);

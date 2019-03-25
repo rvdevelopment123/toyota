@@ -131,7 +131,7 @@ return [
     'method' => '方法',
     'make_payment' => '支払う',
     'modify_search' => '検索の変更',
-    'model' => 'モデル',
+    'car_model' => '車のモデル',
 
     'name' => '名',
     'no_due' => '期限なし',
@@ -153,6 +153,7 @@ return [
     'payment_method' => '支払方法',
     'confirm_password' => 'パスワードを認証する',
     'phone' => '電話',
+    'phone_number' => '電話番号',
     'price' => '価格',
     'product' => '製品',
     'product_index' => '製品インデックス',
@@ -294,6 +295,11 @@ return [
     
     'national_id' => '国民ID',
     'sponsor_name' => 'スポンサー名',
+    
+    'upfront_payment' => '前払い決済',
+    'monthly_payment' => '毎月の支払額',
+    'last_payment' => '最終の支払い',
+    'total_installment' => '合計割賦',
 
     'entity' => '',
     'save' => 'セーブ',

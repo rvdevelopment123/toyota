@@ -71,7 +71,7 @@ return [
 
     'mrp' => 'Maximaler Einzelhandelspreis',
     'memo' => 'Memo',
-    'model' => 'Modell',
+    'car_model' => 'Auto Model',
 
     'name' => 'Name',
     'note' => 'Hinweis',
@@ -85,6 +85,7 @@ return [
     'password' => 'Passwort',
     'confirm_password' => 'Bestätige das Passwort',
     'phone' => 'Telefon',
+    'phone_number' => 'Telefonnummer',
     'price' => 'Preis',
     'product' => 'Produkt',
     'product_name' => 'Produktname',
@@ -166,6 +167,11 @@ return [
     
     'national_id' => 'Personalausweis',
     'sponsor_name' => 'Sponsorname',
+    
+    'upfront_payment' => 'Vorauszahlung',
+    'monthly_payment' => 'Monatliche Bezahlung',
+    'last_payment' => 'Letzte Zahlung',
+    'total_installment' => 'Gesamtbetrag',
 
     'entity' => 'Entität',
     

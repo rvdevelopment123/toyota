@@ -77,7 +77,7 @@
 			
 			<div class="form-group" id="carDetails">
 				<label class="col-sm-2 control-label"> 
-					{{ trans('core.model') }}
+					{{ trans('core.car_model') }}
 				</label>
 				<div class="col-sm-4">
 					{!! Form::text('model', $product->model, ['class' => 'form-control']) !!}

@@ -145,7 +145,7 @@ return [
     'method' => 'Método',
     'make_payment' => 'Make Payment',
     'modify_search' => 'Modificar pesquisa',
-    'model' => 'Modelo',
+    'car_model' => 'Modelo do carro',
     'more_details' => 'Mais detalhes',
     'minimum_retails_price' => 'Preço Mínimo de Varejo',
 
@@ -171,6 +171,7 @@ return [
     'payment_method' => 'Método de pagamento',
     'confirm_password' => 'Confirme a Senha',
     'phone' => 'telefone',
+    'phone_number' => 'Número de telefone',
     'price' => 'Preço',
     'product' => 'produtos',
     'product_settings'  => 'Configurações do produto',
@@ -325,6 +326,11 @@ return [
     
     'national_id' => 'identidade nacional',
     'sponsor_name' => 'Nome do Patrocinador',
+    
+    'upfront_payment' => 'Pagamento Adiantado',
+    'monthly_payment' => 'Pagamento mensal',
+    'last_payment' => 'Ultimo pagamento',
+    'total_installment' => 'Parcela Total',
 
     'entity' => '',
     'save' => 'Salve',

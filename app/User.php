@@ -38,6 +38,10 @@ class User extends Authenticatable
     public function roles() {
         return $this->belongsToMany('App\Role');
     }
+    
+    public function user_role() {
+        return $this->hasOne('App\UserRole', 'user_id', 'id');
+    }
 
     public function can($permission, $arguments = []) {
         foreach($this->roles as $role) {
