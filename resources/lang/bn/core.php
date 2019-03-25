@@ -105,7 +105,7 @@ return [
     'memo_list_today' => 'আজকের বিক্রয়ের তালিকা',
     'menu' => 'মেনু',
     'make_payment' => 'বকেয়া পরিশোধ',
-    'model' => 'মডেল',
+    'car_model' => 'কার মডেল',
 
     'name' => 'নাম',
     'note' => 'ণোট',
@@ -126,6 +126,7 @@ return [
     'payment_received' => 'পেমেন্ট গ্রহণ করা হয়েছে',
     'confirm_password' => 'কনফার্ম পাসওয়ার্ড',
     'phone' => 'ফোন',
+    'phone_number' => 'ফোন নম্বর',
     'price' => 'মূল্য',
     'product' => 'পণ্য',
     'product_price_updated' => 'পন্যের দাম হালনাগাদ করা হয়েছে',
@@ -265,6 +266,11 @@ return [
     
     'national_id' => 'জাতীয় আইডি',
     'sponsor_name' => 'পৃষ্ঠপোষক নাম',
+    
+    'upfront_payment' => 'আপফ্রন্ট পেমেন্ট',
+    'monthly_payment' => 'মাসিক বেতন',
+    'last_payment' => 'শেষ পরিশোধ',
+    'total_installment' => 'মোট কাস্টমমেন্ট',
 
     'entity' => 'টি',
     

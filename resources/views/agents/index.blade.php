@@ -21,7 +21,7 @@
             <span class="pull-right">   
                 <a 
                     class="btn btn-default btn-alt btn-xs" 
-                    href="{{ action('SellController@getIndex') }}"
+                    href="{{ action('AgentController@getIndex') }}"
                 >
                     <i class="fa fa-eraser"></i> 
                     {{ trans('core.clear') }}
@@ -253,7 +253,29 @@
                             {{trans('core.customer')}}
                         </label>
                         <div class="col-sm-9">
-                            {!! Form::select('customer', $customers, Request::get('customer'), ['class' => 'form-control selectpicker', 'data-live-search' => 'true', 'placeholder' => 'Please select a customer']) !!}
+                            {{--  {!! Form::select('customer', $customers, Request::get('customer'), ['class' => 'form-control selectpicker', 'data-live-search' => 'true', 'placeholder' => 'Please select a customer']) !!}  --}}
+                            <select name="customer" class="form-control selectpicker" id="customer" data-live-search="true" placeholder="Please select a customer">
+                                <option value="">Please select a customer</option>
+                                @foreach ($customers as $key => $customer)
+                                    <option value="{{ $customer->id }}">{{ $customer->first_name . " " . $customer->last_name . " " . $customer[$key]['user_role'] }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-3" @if(rtlLocale()) style="text-align: left;" @endif>
+                            {{trans('core.agent')}}
+                        </label>
+                        <div class="col-sm-9">
+                            <select name="agent" class="form-control selectpicker" id="agent" data-live-search="true" placeholder="Please select an agent">
+                                <option value="">Please select an agent</option>
+                                @foreach ($agents as $key => $agent)
+                                    @if (!empty($agent->user_role->role))
+                                        <option value="{{ $agent->id }}">{{ $agent->first_name . " " . $agent->last_name }}</option>
+                                    @endif
+                                @endforeach
+                            </select>
                         </div>
                     </div>
 

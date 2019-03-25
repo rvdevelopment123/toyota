@@ -131,7 +131,7 @@ return [
     'method' => 'तरीका',
     'make_payment' => 'भुगतान करो',
     'modify_search' => 'खोज संशोधित करें',
-    'model' => 'आदर्श',
+    'car_model' => 'कार के मॉडल',
 
     'name' => 'नाम',
     'no_due' => 'कोई कारण नहीं',
@@ -153,6 +153,7 @@ return [
     'payment_method' => 'भुगतान का तरीका',
     'confirm_password' => 'पासवर्ड की पुष्टि कीजिये',
     'phone' => 'फ़ोन',
+    'phone_number' => 'फ़ोन नंबर',
     'price' => 'मूल्य',
     'product' => 'उत्पाद',
     'product_index' => 'उत्पाद सूचकांक',
@@ -294,6 +295,11 @@ return [
     
     'national_id' => 'राष्ट्रीय पहचान पत्र',
     'sponsor_name' => 'प्रायोजक का नाम',
+    
+    'upfront_payment' => 'अग्रिम भुगतान',
+    'monthly_payment' => 'मासिक भुगतान',
+    'last_payment' => 'अंतिम भुगतान',
+    'total_installment' => 'कुल किस्त',
 
     'entity' => 'सत्ता',
     'save' => 'बचाना',

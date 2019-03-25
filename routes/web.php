@@ -32,6 +32,7 @@ Route::group(['prefix'=>'admin', 'middleware' => ['auth', 'revalidate'] ], funct
 		Agents route
 	=========================================================*/
 	Route::get('agent', 'AgentController@getIndex')->name('agents.index');
+	Route::post('agent', 'AgentController@postIndex');
 	
 	Route::get('agent/details/{transaction}', 'AgentController@agentDetails')->name('agents.details');
 

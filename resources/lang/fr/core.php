@@ -131,7 +131,7 @@ return [
     'method' => 'méthode',
     'make_payment' => 'Effectuer le paiement',
     'modify_search' => 'Modifier la recherche',
-    'model' => 'Modèle',
+    'car_model' => 'Modèle de voiture',
 
     'name' => 'prénom',
     'no_due' => 'Non exigible',
@@ -153,6 +153,7 @@ return [
     'payment_method' => 'Mode de paiement',
     'confirm_password' => 'Confirmez le mot de passe',
     'phone' => 'Téléphone',
+    'phone_number' => 'Numéro de téléphone',
     'price' => 'Prix',
     'product' => 'Produit',
     'product_index' => 'Index des produits',
@@ -294,6 +295,11 @@ return [
     
     'national_id' => "carte d'identité",
     'sponsor_name' => "nom du sponsor",
+    
+    'upfront_payment' => 'Paiement Upfront',
+    'monthly_payment' => 'Paiement mensuel',
+    'last_payment' => 'Dernier paiement',
+    'total_installment' => 'Versement total',
 
     'entity' => '',
     'save' => 'sauvegarder',
